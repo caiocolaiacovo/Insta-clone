@@ -4,15 +4,15 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
+            background-color: #fafafa;
         }
 
-        .App {
+        .app {
             position: relative;
             text-align: center;
-            height: 2000px;
+            height: 1000px;
             top: 100;
-            background-color: #dcdcff;
-            width:800px; 
+            width:602px; 
             margin:0 auto;
         }
 
@@ -44,13 +44,40 @@
             background-repeat: no-repeat;
             padding-left: 40px;
         }
+
+        .post {
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(84.7%, 84.7%, 84.7%);
+        }
+
+        .header {
+            
+            height: 40px;
+        }
+
+        .photo {
+            background-color: silver;
+            max-height: 700px;
+            min-height: 300px;
+        }
+
+        .interaction {
+            min-height: 100px;
+        }
     </style>
     <body>
         <div class="top">
             <input type="text" placeholder="Buscar"/>
         </div>
-        <div class="App">
-            Photo
+        <div class="app">
+            <div class="post">
+                <div class="header"></div>
+                <div class="photo">
+                    <img width="600px" src="https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631-1500x1000.jpg" />
+                </div>
+                <div class="interaction"></div>
+            </div>
         </div>
     </body>
 </html>
