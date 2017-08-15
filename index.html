@@ -38,6 +38,8 @@
             margin: 8px 0;
             font-size:11px;
             box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
             outline: none;
             background-image: url('https://www.w3schools.com/css/searchicon.png');
             background-position: 7px 8px; 
@@ -49,11 +51,14 @@
             border-style: solid;
             border-width: 1px;
             border-color: rgb(84.7%, 84.7%, 84.7%);
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
         }
 
         .header {
             
-            height: 40px;
+            height: 60px;
         }
 
         .photo {
@@ -62,8 +67,20 @@
             min-height: 300px;
         }
 
+        .photo img {
+            width: 600px;
+        }
+
         .interaction {
             min-height: 100px;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 35px;
+            float: left;
+            margin-top: 13px;
+            margin-left: 15px;
         }
     </style>
     <body>
@@ -72,9 +89,11 @@
         </div>
         <div class="app">
             <div class="post">
-                <div class="header"></div>
+                <div class="header">
+                    <img src="avatar.png" alt="" class="avatar">
+                </div>
                 <div class="photo">
-                    <img width="600px" src="https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631-1500x1000.jpg" />
+                    <img src="https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631-1500x1000.jpg" />
                 </div>
                 <div class="interaction"></div>
             </div>
