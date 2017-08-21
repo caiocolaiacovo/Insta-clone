@@ -1,4 +1,7 @@
 <html>
+    <head>
+        <script src="https://use.fontawesome.com/66ce1da5a7.js"></script>
+    </head>
     <style type="text/css">
         body {
             margin: 0;
@@ -57,8 +60,8 @@
         }
 
         .header {
-            
-            height: 60px;
+            height: 35px;
+            padding: 15px;
         }
 
         .photo {
@@ -73,14 +76,29 @@
 
         .interaction {
             min-height: 100px;
+            padding: 15px;
+        }
+
+        .interaction i {
+            float: left;
+        }
+
+        .interaction .fa-comment-o {
+            margin-left: 10px;
         }
 
         .avatar {
             border-radius: 50%;
             width: 35px;
             float: left;
-            margin-top: 13px;
-            margin-left: 15px;
+            margin-right: 10px;
+        }
+
+        .likes-quantity {
+            width: 100%;
+            float: left;
+            text-align: left;
+            margin-top: 10px;
         }
     </style>
     <body>
@@ -91,11 +109,16 @@
             <div class="post">
                 <div class="header">
                     <img src="avatar.png" alt="" class="avatar">
+                    <div style="height: 100%; float: left;">caiocolaiacovo</div>
                 </div>
                 <div class="photo">
                     <img src="https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631-1500x1000.jpg" />
                 </div>
-                <div class="interaction"></div>
+                <div class="interaction">
+                    <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o fa-lg" aria-hidden="true"></i>
+                    <div class="likes-quantity">10 curtidas</div>
+                </div>
             </div>
         </div>
     </body>
